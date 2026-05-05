@@ -1,0 +1,17 @@
+{
+    "actorSpecification": 1,
+    "name": "upwork-fiverr-niche-trends-scraper",
+    "title": "Upwork/Fiverr Niche Trends Scraper",
+    "description": "Aggregates gig and job listings from Upwork and Fiverr to identify over-saturated vs high-demand skills.",
+    "version": "0.0",
+    "meta": {
+        "templateId": "ai-generated-actor",
+        "generatedBy": "gpt-4o"
+    },
+    "input": "./input_schema.json",
+    "output": "./output_schema.json",
+    "storages": {
+        "dataset": "./dataset_schema.json"
+    },
+    "dockerfile": "../Dockerfile"
+}

@@ -1,0 +1,29 @@
+{
+    "actorSpecification": 1,
+    "fields": {},
+    "views": {
+        "overview": {
+            "title": "Overview",
+            "transformation": {
+                "fields": ["skill", "supplyCount", "demandCount"]
+            },
+            "display": {
+                "component": "table",
+                "properties": {
+                    "skill": {
+                        "label": "Skill",
+                        "format": "text"
+                    },
+                    "supplyCount": {
+                        "label": "Supply (gigs)",
+                        "format": "number"
+                    },
+                    "demandCount": {
+                        "label": "Demand (requests/jobs)",
+                        "format": "number"
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+{
+    "title": "Input schema of the Upwork/Fiverr Niche Trends Scraper",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "startUrls": {
+            "title": "Start URLs",
+            "type": "array",
+            "description": "Listing/search URLs to start with (Upwork/Fiverr search pages, category pages).",
+            "editor": "requestListSources",
+            "prefill": [
+                {
+                    "url": "https://www.upwork.com/search/jobs/?q=logo%20design"
+                },
+                {
+                    "url": "https://www.fiverr.com/search/gigs?query=logo%20design"
+                }
+            ]
+        },
+        "platforms": {
+            "title": "Platforms to tag",
+            "type": "array",
+            "description": "Platforms to include/tags for results (e.g., Upwork, Fiverr).",
+            "default": ["Upwork", "Fiverr"]
+        },
+        "timeframeDays": {
+            "title": "Timeframe (days)",
+            "type": "integer",
+            "description": "Only count listings posted within this many days for demand calculations.",
+            "default": 30
+        },
+        "maxRequestsPerCrawl": {
+            "title": "Max Requests per Crawl",
+            "type": "integer",
+            "description": "Maximum number of requests the crawler will make.",
+            "default": 250
+        },
+        "normalizeRates": {
+            "title": "Normalize rates to hourly",
+            "type": "boolean",
+            "description": "Attempt to normalize listed prices to an hourly rate when possible.",
+            "default": true
+        }
+    }
+}
